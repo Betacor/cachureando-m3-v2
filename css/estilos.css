@@ -216,6 +216,20 @@ nav {
   }
 /*Fin Tarjetas*/
 
+/* Encuesta */
+.pregunta{
+  margin: 0 10%;
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  padding: 5rem;
+}
+
+.nivel__1{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
 /*Quiero vender*/
 .section__btn{
     align-content: center;
