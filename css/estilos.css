@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap'); */
 
 
 
@@ -7,8 +7,8 @@
 * {
     padding: 0;
     margin: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
+    /* -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; */
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
@@ -74,8 +74,8 @@ nav {
 }
 /*   Fin navbar pantallas pequeñas   */
 
-/*   Media query   */
-@media (max-width: 1309px) {
+  /* Media query   */ 
+/* @media (max-width: 1309px) {
     .icon {
         display: block;
         width: 100%;
@@ -97,8 +97,8 @@ nav {
         display: block;
         float: none;
     }
-}
-/*   Fin media query   */
+} */
+/*   Fin media query  
 
 /*   Hero img  */
 .hero__img img {
@@ -133,8 +133,8 @@ nav {
     letter-spacing: .05rem;
     text-align: justify;
     color: #8C797E;
-    margin-left: 10rem;
-    margin-right: 10rem;
+    /* margin-left: 10rem;
+    margin-right: 10rem; */
   }
 
 .section__selling{
@@ -304,7 +304,7 @@ footer .social > a {
     display:inline-block;
     text-align:center;
     margin:0 8px;
-    color:inherit;
+    color:#FFF;
     opacity:0.75;
   }
   
