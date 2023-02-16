@@ -1,5 +1,5 @@
 # Cachureando
-https://github.com/betacor/cachureando-m3
+https://github.com/betacor/cachureando-m3-v2
 
 Proyecto Grupal Front-End
 
@@ -9,6 +9,6 @@ Karina Ortiz https://github.com/krynortz91
 
 Macarena Ramdohr https://github.com/sappy666
 
-Yurisan Lagos https://github.com/ylagosalfaro
+Yurisan Lagos https://github.com/betacor
 
 
