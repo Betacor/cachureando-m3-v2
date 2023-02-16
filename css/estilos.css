@@ -118,7 +118,8 @@ nav {
 
 /*   Quienes somos   */
 #quienessomos,
-#quierocomprar {
+#quierocomprar 
+{
     margin: 5rem;
     font-style: normal;
     text-align: center;
@@ -127,7 +128,8 @@ nav {
 }
 
 #quienessomos h2,
-#quierocomprar h2 {
+#quierocomprar h2,
+#quierovender h2 {
     font-size: 2rem;
     font-weight: 900;
 }
@@ -219,11 +221,46 @@ nav {
 }
 /*Fin-Cards*/
 
+/*Quiero vender*/
+#quierovender{
+    padding: 10rem;
+    background-color: #FFDFDF;
+    text-align: center;
+    letter-spacing: .05rem;
+    color: #8C797E;
+}
+.quierovender{
+    align-content: center;
+    margin: auto;
+}
+
+.btn {
+    border: 2px solid #F3969A;
+    border-radius: 0.5rem;
+    background-color: #FFDFDF;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 2rem;
+
+  }
+
+  .info {
+    border-color: #F3969A;
+    color: #F3969A
+  }
+
+  .info:hover {
+    background: #F3969A;
+    color: white;
+  }
 
 /*   Footer   */
 .footer {
-    margin: 5rem;
-    padding: 1rem;
+    background-color: #FAA6BD;
+    color:#fff;
+    padding: 6rem;
     font-style: normal;
     text-align: center;
     letter-spacing: .05rem;
