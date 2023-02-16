@@ -4,7 +4,6 @@
 
 
 /*   Global   */
-
 * {
     padding: 0;
     margin: 0;
@@ -14,12 +13,10 @@
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     list-style: none;
-    /*    outline: 1px solid brown;*/
 }
+/*   Fin Global   */
 
-/*   End Global   */
-
-/*   Start Navbar   */
+/*   Navbar   */
 nav {
     height: 100px;
     background-color: #FAA6BD;
@@ -58,11 +55,9 @@ nav {
 .list-item li:hover {
     background-color: rgb(233, 93, 121);
 }
+/*   Fin navbar   */
 
-/*   End navbar   */
-
-/*   Start navbar for small screens   */
-
+/*   navbar pantallas pequeñas  */
 .icon {
     display: none;
 }
@@ -77,11 +72,9 @@ nav {
     border-radius: 4px;
     cursor: pointer;
 }
+/*   Fin navbar pantallas pequeñas   */
 
-/*   End navbar for small screens   */
-
-/*   Start media query   */
-
+/*   Media query   */
 @media (max-width: 1309px) {
     .icon {
         display: block;
@@ -105,46 +98,48 @@ nav {
         float: none;
     }
 }
+/*   Fin media query   */
 
-/*   End media query   */
-
-/*   Start hero   */
-.hero1 img {
+/*   Hero img  */
+.hero__img img {
     object-fit: cover;
     /* object-position: 0%; */
     width: 100%;
     max-height: 40rem;
 }
+/*   Fin hero   */
 
-/*   End hero   */
+/*   Secciones   */
+.section{
+    padding: 6rem;
+  }
 
-/*   Quienes somos   */
-#quienessomos,
-#quierocomprar 
-{
-    font-family: 'Poppins', sans-serif;
-    margin: 5rem;
-    font-style: normal;
-    text-align: center;
-    letter-spacing: .05rem;
-    color: #8C797E;
-}
-
-#quienessomos h2,
-#quierocomprar h2,
-#quierovender h2 {
-    font-family: 'Poppins', sans-serif;
+.section__title{
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	padding: 20px;
     font-size: 2rem;
-    font-weight: 900;
-}
-
-.text-quienessomos,
-.text-quierocomprar {
     font-family: 'Poppins', sans-serif;
-    padding: 4rem;
+	margin-top: 20px;
+	text-align: center;
+    font-weight: 900;
+	color: #7a7a7a;
+  }
+
+.section__text {
+    font-family: 'Poppins', sans-serif;
+    padding: 2rem;
     letter-spacing: .05rem;
     text-align: justify;
-}
+    color: #8C797E;
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+
+.section__selling{
+    background-color: #FFDFDF;
+  }
 
 /*estilos tops.html                             (ORDENAR)*/
 *{
@@ -152,24 +147,16 @@ nav {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-}
-/*Cards*/
+  }
+
+/*Tarjetas*/
 .container-card{
 	width: 100%;
 	display: flex;
 	/* max-width: 1100px; */
 	margin: auto;
 }
-.title-cards{
-	width: 100%;
-	max-width: 1080px;
-	margin: auto;
-	padding: 20px;
-    font-family: 'Poppins', sans-serif;
-	margin-top: 20px;
-	text-align: center;
-	color: #7a7a7a;
-}
+
 .card{
 	width: 100%;
 	margin: 20px;
@@ -188,21 +175,21 @@ nav {
 .card img{
 	width: 100%;
 	/* height: 210px; */
-}
+  }
 .card .contenido-card{
 	padding: 15px;
 	text-align: center;
-}
+  }
 .card .contenido-card h3{
 	margin-bottom: 15px;
 	color: #7a7a7a;
-}
+  }
 .card .contenido-card p{
 	line-height: 1.8;
 	color: #6a6a6a;
 	font-size: 14px;
 	margin-bottom: 5px;
-}
+  }
 .card .contenido-card a{
 	display: inline-block;
 	padding: 10px;
@@ -214,11 +201,11 @@ nav {
     font-family: 'Poppins', sans-serif;
 	transition: all 400ms ease;
 	margin-bottom: 5px;
-}
+  }
 .card .contenido-card a:hover{
 	background: #f3969a;
 	color: #fff;
-}
+  }
 @media only screen and (min-width:320px) and (max-width:768px){
 	.container-card{
 		flex-wrap: wrap;
@@ -226,23 +213,14 @@ nav {
 	.card{
 		margin: 15px;
 	}
-}
-/*Fin-Cards*/
+  }
+/*Fin Tarjetas*/
 
 /*Quiero vender*/
-#quierovender{
-    padding: 10rem;
-    font-family: 'Poppins', sans-serif;
-    background-color: #FFDFDF;
-    text-align: center;
-    letter-spacing: .05rem;
-    color: #8C797E;
-}
-.quierovender{
+.section__btn{
     align-content: center;
-    font-family: 'Poppins', sans-serif;
-    margin: auto;
-}
+    text-align: center;
+  }
 
 .btn {
     border: 2px solid #F3969A;
@@ -254,7 +232,7 @@ nav {
     font-size: 16px;
     cursor: pointer;
     margin-top: 2rem;
-
+    
   }
 
   .info {
@@ -267,20 +245,8 @@ nav {
     color: white;
   }
 
-
-/*   Reloj  */
-  #clock{
-    padding-top: 2rem;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: larger;
-    background-color: #FAA6BD;
-    color: #FFF;
-}
-/*  Fin Reloj  */
-
-/*   Canales de ayuda  */
-.whatsapp{
+/*   Launcher  */
+.launcher__btn--whatsapp{
     width: 50px;
     height: 50px;   
     position: fixed;
@@ -290,7 +256,7 @@ nav {
     padding: 0;
   }
 
-  .carrito{
+.launcher__btn--cart{
     width: 50px;
     height: 50px;
     position: fixed;
@@ -299,8 +265,8 @@ nav {
     border-radius: 50%;
     padding: 0;
   }
+/*   Fin Launcher  */
 
-/*   Fin Canales de ayuda  */
 /*   Footer   */
 .footer {
     background-color: #FAA6BD;
@@ -311,10 +277,24 @@ nav {
     letter-spacing: .05rem;
 }
 
+.footer__icon{
+    width: 40px;
+    height: 40px;
+}
+
+.footer__clock{
+    padding-top: 2rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+    background-color: #FAA6BD;
+    color: #FFF;
+}
+
 footer .social {
     margin-top: 1rem;
     text-align:center;
-  }
+}
   
 footer .social > a {
     font-size:24px;
@@ -331,3 +311,4 @@ footer .social > a {
 footer .social > a:hover {
     opacity:0.4;
   }
+  /*  Fin Footer   */
