@@ -1,7 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap'); */
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
 
 /*   Global   */
 
@@ -12,7 +9,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     text-decoration: none;
-    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Poppins', sans-serif; 
     list-style: none;
     /*    outline: 1px solid brown;*/
 }
