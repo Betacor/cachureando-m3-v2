@@ -4,13 +4,12 @@
 * {
     padding: 0;
     margin: 0;
-    /* -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box; */
     box-sizing: border-box;
-    text-decoration: none;                  /*cambiar a class de nav*/
+    text-decoration: none;                 /*cambiar a class de nav*/
     font-family: 'Poppins', sans-serif;
-    list-style: none;                       /*cambiar a class de nav*/                
+    list-style: none;                      /*cambiar a class de nav*/
 }
+
 /*   Fin Global   */
 
 /*   Navbar   */
@@ -52,9 +51,9 @@ nav {
 .list-item li:hover {
     background-color: rgb(233, 93, 121);
 }
+
 /*   Fin navbar   */
 
-/*   navbar pantallas pequeñas  */
 .icon {
     display: none;
 }
@@ -69,10 +68,12 @@ nav {
     border-radius: 4px;
     cursor: pointer;
 }
-/*   Fin navbar pantallas pequeñas   */
 
-  /* Media query   */ 
-/* @media (max-width: 1309px) {
+
+/*   navbar responsive  */
+/* Media query del navbar  */
+
+@media (max-width: 1309px) {
     .icon {
         display: block;
         width: 100%;
@@ -94,8 +95,9 @@ nav {
         display: block;
         float: none;
     }
-} */
+}
 /*   Fin media query  
+/*   Fin navbar responsive   */
 
 /*   Hero img  */
 .hero__img img {
@@ -104,25 +106,26 @@ nav {
     width: 100%;
     max-height: 40rem;
 }
+
 /*   Fin hero   */
 
 /*   Secciones   */
-.section{
+.section {
     padding: 6rem;
-  }
+}
 
-.section__title{
-	width: 100%;
-	max-width: 1080px;
-	margin: auto;
-	padding: 20px;
+.section__title {
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+    padding: 20px;
     font-size: 2rem;
     font-family: 'Poppins', sans-serif;
-	margin-top: 20px;
-	text-align: center;
+    margin-top: 20px;
+    text-align: center;
     font-weight: 900;
-	color: #7a7a7a;
-  }
+    color: #7a7a7a;
+}
 
 .section__text {
     font-family: 'Poppins', sans-serif;
@@ -132,32 +135,32 @@ nav {
     color: #8C797E;
     /* margin-left: 10rem;
     margin-right: 10rem; */
-  }
+}
 
-.section__selling{
+.section__selling {
     background-color: #FFDFDF;
-  }
+}
 
 
 /* Encuesta */
-.pregunta{
-  margin: 0 10%;
-  display: grid;
-  grid-template-columns: repeat(10,1fr);
-  padding: 5rem;
+.pregunta {
+    margin: 0 10%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    padding: 5rem;
 }
 
-.nivel__1{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+.nivel__1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 /*Quiero vender*/
-.section__btn{
+.section__btn {
     align-content: center;
     text-align: center;
-  }
+}
 
 .btn {
     border: 2px solid #F3969A;
@@ -169,31 +172,31 @@ nav {
     font-size: 16px;
     cursor: pointer;
     margin-top: 2rem;
-    
-  }
 
-  .info {
+}
+
+.info {
     border-color: #F3969A;
     color: #F3969A
-  }
+}
 
-  .info:hover {
+.info:hover {
     background: #F3969A;
     color: white;
-  }
+}
 
 /*   Launcher  */
-.launcher__btn--whatsapp{
+.launcher__btn--whatsapp {
     width: 50px;
-    height: 50px;   
+    height: 50px;
     position: fixed;
     bottom: 70px;
     left: 20px;
     border-radius: 50%;
     padding: 0;
-  }
+}
 
-.launcher__btn--cart{
+.launcher__btn--cart {
     width: 50px;
     height: 50px;
     position: fixed;
@@ -201,25 +204,26 @@ nav {
     left: 20px;
     border-radius: 50%;
     padding: 0;
-  }
+}
+
 /*   Fin Launcher  */
 
 /*   Footer   */
 .footer {
     background-color: #FAA6BD;
     font-family: 'Poppins', sans-serif;
-    color:#fff;
+    color: #fff;
     padding: 6rem;
     text-align: center;
     letter-spacing: .05rem;
 }
 
-.footer__icon{
+.footer__icon {
     width: 40px;
     height: 40px;
 }
 
-.footer__clock{
+.footer__clock {
     padding-top: 2rem;
     text-align: center;
     font-family: 'Poppins', sans-serif;
@@ -228,24 +232,29 @@ nav {
     color: #FFF;
 }
 
-footer .social {
+.social {
+
     margin-top: 1rem;
-    text-align:center;
+    text-align: center;
+    /* border: 1px solid red; */
+    width: 100%;
 }
-  
-footer .social > a {
-    font-size:24px;
-    width:40px;
-    height:40px;
-    line-height:40px;
-    display:inline-block;
-    text-align:center;
-    margin:0 8px;
-    color:#FFF;
-    opacity:0.75;
-  }
-  
-footer .social > a:hover {
-    opacity:0.4;
-  }
-  /*  Fin Footer   */
+
+.social__icon--instagram {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 8px;
+    color: #FFF;
+    /* border: 1px solid blue; */
+    /* opacity: 0.75; */
+}
+
+footer .social>a:hover {
+    opacity: 0.4;
+}
+
+/*  Fin Footer   */
