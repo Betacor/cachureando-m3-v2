@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/estilos.css">
-    <link rel="stylesheet" href="css/productos.css">
+    <link rel="stylesheet" href="./css/productos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <title>Cachureando m3</title>
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
@@ -24,10 +24,10 @@
                 <span class="toggle">☰</span>
             </div>
             <ul class="list-item">
-                <li><a href="./index.html#quierocomprar">Quiero comprar</a></li>
-                <li><a href="./index.html#quierovender">Quiero vender</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Encuesta</a></li>
+                <li><a href="#quiero_comprar">Quiero comprar</a></li>
+                <li><a href="#quiero_vender">Quiero vender</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./encuesta.html">Encuesta</a></li>
                 <!-- <li><a img href="#"></a></li>
             <li><a href="#"></a></li> -->
             </ul>
@@ -55,55 +55,55 @@
 
     <!-- Quiero comprar -->
     <section class="section">
-        <h2 class="section__title">Quiero Comprar</h2>
-    <!-- Fin Quiero comprar -->
+        <h2 class="section__title" id="quiero_comprar">Quiero comprar</h2>
         
-    <!--   Tarjetas-->
-        <div class="container-card">
+        <!--   Tarjetas-->
+        <div class="container__card">
             <div class="card">
                 <figure>
-                    <img src="https://static.zara.net/photos///2022/I/0/1/p/5802/123/640/2/w/750/5802123640_6_1_1.jpg?ts=1660895338665">
+                    <img class="card__img" src="https://static.zara.net/photos///2022/I/0/1/p/5802/123/640/2/w/750/5802123640_6_1_1.jpg?ts=1660895338665">
                 </figure>
-                <div class="contenido-card">
-                    <h3>TOPS</h3>
-                    <a href="./tops.html">+</a>
+                <div class="card__content">
+                    <h3 class="card__title">TOPS</h3>
+                    <a class="card__btn" href="./tops.html">+</a>
                 </div>
             </div>
             <div class="card">
                 <figure>
-                    <img src="https://static.zara.net/photos///2023/W/0/1/p/8417/312/982/2/w/750/8417312982_6_1_1.jpg?ts=1674478371681">
+                    <img class="card__img" src="https://static.zara.net/photos///2023/W/0/1/p/8417/312/982/2/w/750/8417312982_6_1_1.jpg?ts=1674478371681">
                 </figure>
-                <div class="contenido-card">
-                    <h3>PANTALONES</h3>
-                    <a href="#">+</a>
+                <div class="card__content">
+                    <h3 class="card__title">PANTALONES</h3>
+                    <a class="card__btn" href="#">+</a>
                 </div>
             </div>
             <div class="card">
                 <figure>
-                    <img src="https://static.zara.net/photos///2023/W/0/1/p/4432/906/800/2/w/750/4432906800_6_1_1.jpg?ts=1674478307286">
+                    <img class="card__img" src="https://static.zara.net/photos///2023/W/0/1/p/4432/906/800/2/w/750/4432906800_6_1_1.jpg?ts=1674478307286">
                 </figure>
-                <div class="contenido-card">
-                    <h3>CHAQUETAS</h3>
-                    <a href="#">+</a>
+                <div class="card__content">
+                    <h3 class="card__title">CHAQUETAS</h3>
+                    <a class="card__btn" href="#">+</a>
                 </div>
             </div>
             <div class="card">
                 <figure>
-                    <img src="https://static.zara.net/photos///2023/W/1/1/p/1509/010/002/2/w/750/1509010002_6_1_1.jpg?ts=1674637938041">
+                    <img class="card__img" src="https://static.zara.net/photos///2023/W/1/1/p/1509/010/002/2/w/750/1509010002_6_1_1.jpg?ts=1674637938041">
                 </figure>
-                <div class="contenido-card">
-                    <h3>CALZADO</h3>
-                    <a href="#">+</a>
+                <div class="card__content">
+                    <h3 class="card__title">CALZADO</h3>
+                    <a class="card__btn" href="#">+</a>
                 </div>
             </div>
         </div>
+        <!--Fin Tarjetas-->
     </section>
-    <!--Fin Tarjetas-->
+    <!-- Fin Quiero comprar -->
 
     <!-- quiero vender -->
     <section class="section__selling">
         <section class="section">
-            <h2 class="section__title">Quiero vender</h2>
+            <h2 class="section__title" id="quiero_vender">Quiero vender</h2>
             <div class="section__btn">
                 <button class="btn info">Si, quiero vender!</button>
             </div>
@@ -123,12 +123,11 @@
     <footer>
         <div class="footer">
             <img class="footer__icon" src="./img/gancho-de-ropa(1).png" alt="">
-            <div class="body">
-                <div id="clock" class="footer__clock">
-                </div>
+            <div class="">
+                <div id="clock" class="footer__clock"></div>
                 <p class="footer__text">Codecats | Viña de Mar | Región de Valparaíso | 2023</p>
                 <div class="social">
-                    <a href="#"><i class="social__instagram"></i></a>
+                    <a href="#"><i class="social__icon--instagram"></i></a>
                     <a href="#"><i class="social__twitter"></i></a>
                     <a href="#"><i class="social__facebook"></i>
                     </a>
