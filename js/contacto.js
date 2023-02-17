@@ -32,11 +32,11 @@ function validarForm() {
         alert("El campo correo es requerido");
         correo.focus();
         verificar=false;
-    }else if (!expRegEmail.exec(correo.value)){
+    }else if (!expRegCorreo.exec(correo.value)){
         alert("El campo correo esta mal escrito");
         correo.focus();
         verificar=false;
-    }else if (!mensaje.value) {
+    }else if (!mensaje.value){
         alert("El campo mensaje es requerido");
         mensaje.focus();
         verificar=false;
