@@ -52,6 +52,9 @@
 	margin-bottom: 15px;
 	color: #7a7a7a;
 }
+.card__title--right{
+    text-align: right;
+}
 .card__text{
 	line-height: 1.8;
 	color: #6a6a6a;
@@ -82,3 +85,4 @@
 	}
 }
 /*Fin-Cards*/
+
