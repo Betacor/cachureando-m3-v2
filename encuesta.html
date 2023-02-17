@@ -9,56 +9,106 @@
     <title>Cachureando m3</title>
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
-<body>
+    <body onload="clock()">
+
+        <!-- navbar -->
+        <header>
+            <nav>
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./img/gancho-de-ropa(1).png">
+                    </a>
+                </div>
+                <div class="icon">
+                    <span class="toggle">☰</span>
+                </div>
+                <ul class="list-item">
+                    <li><a href="./index.html#quierocomprar">Quiero comprar</a></li>
+                    <li><a href="./index.html#quierovender">Quiero vender</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="./encuesta.html">Encuesta</a></li>
+                    <li><a href="./carrito.html">Carrito</a></li>
+                    <!-- <li><a img href="#"></a></li>
+                <li><a href="#"></a></li> -->
+                </ul>
+            </nav>
+        </header>
+    <!-- Quienes somos -->
+    <section class="section__encuesta">
+        <div class="section__encuestaimg">
+            <img src="./img/trabajando.png" alt="" width="200">	
+        </div>
+        <h2 class="section__encuestatitle">ENCUESTA DE SATISFACCIÓN</h2>
+        <div class="section__encuestatext">
+            <p>Desde una escala del 1 al 10 donde 1 es muy deficiente y 10 es sobresaliente
+                ¿Cómo calificarías tu experiencia en nuestro sitio web?  </p>
+        </div>
+
     <!-- Encuesta -->
     <form action="">
         <div class="pregunta">
-        <div class="nivel__1">
-            <label for="">1</label>
-            <input type="radio">
+            <div class="nivel__1">
+                <input type="radio" id="x2" name="x" class="radio siempre" required>
+                <label for="x2">1</label>
+            </div>
+            <div class="nivel__1">
+                <input type="radio" id="x2" name="x" class="radio siempre" required>
+                <label for="x2">2</label>
+            </div>
+            <div class="nivel__1">
+                <input type="radio" id="x2" name="x" class="radio siempre" required>
+                <label for="x2">3</label>
+            </div>
+            <div class="nivel__1">
+                <input type="radio" id="x2" name="x" class="radio siempre" required>
+                <label for="x2">4</label>
+            </div>
+            <div class="nivel__1">
+                <input type="radio" id="x2" name="x" class="radio siempre" required>
+                <label for="x2">5</label>
+            </div>
+            <div class="nivel__1">
+                <input type="radio" id="x2" name="x" class="radio siempre" required>
+                <label for="x2">6</label>
+            </div>
+            <div class="nivel__1">
+                <input type="radio" id="x2" name="x" class="radio siempre" required>
+                <label for="x2">7</label>
+            </div>
+            <div class="nivel__1">
+                <input type="radio" id="x2" name="x" class="radio siempre" required>
+                <label for="x2">8</label>
+            </div>
+            <div class="nivel__1">
+                <input type="radio" id="x2" name="x" class="radio siempre" required>
+                <label for="x2">9</label>
+            </div>
+            <div class="nivel__1">
+                <input type="radio" id="x2" name="x" class="radio siempre" required>
+                <label for="x2">10</label>
+            </div>
         </div>
-        <div class="nivel__1">
-            <label for="">1</label>
-            <input type="radio">
-        </div>
-        <div class="nivel__1">
-            <label for="">1</label>
-            <input type="radio">
-        </div>
-        <div class="nivel__1">
-            <label for="">1</label>
-            <input type="radio">
-        </div>
-        <div class="nivel__1">
-            <label for="">1</label>
-            <input type="radio">
-        </div>
-        <div class="nivel__1">
-            <label for="">1</label>
-            <input type="radio">
-        </div>
-        <div class="nivel__1">
-            <label for="">1</label>
-            <input type="radio">
-        </div>
-        <div class="nivel__1">
-            <label for="">1</label>
-            <input type="radio">
-        </div>
-        <div class="nivel__1">
-            <label for="">1</label>
-            <input type="radio">
-        </div>
-        <div class="nivel__1">
-            <label for="">1</label>
-            <input type="radio">
-        </div>
-        </div>
-        <button type="submit">Enviar</button>
-    </form>
+        <!-- *** ALERTA DE ÉXITO*** -->
+                <div id="alerta-exito" class="alert alert-dismissible alert-success">
+                    <button id="close-exito" type="button" class="close" data-dismiss="alert">&times;</button>
+                    <strong>¡BIEN HECHO!</strong> Has contestado de forma exitosa la
+                    encuesta
+                    de satisfacción</a>.
+                </div>
+    </form>    
+</section>
   <!-- Fin Encuesta -->
 
-      <!-- Pie de página-->
+    <!-- Launcher -->
+        <div class="launcher__btn--cart">
+            <a href="./carrito.html"><img src="./img/carro-de-la-carretilla.png" alt="" width="50"></a>
+        </div>
+        <div class="launcher__btn--whatsapp">
+            <a href="https://web.whatsapp.com/"><img src="./img/whatsapp(1).png" alt="" width="50"></a>
+        </div>
+    <!-- Fin Launcher -->
+
+    <!-- Pie de página-->
       <footer>
         <div class="footer">
             <img class="footer__icon" src="./img/gancho-de-ropa(1).png" alt="">
@@ -78,8 +128,10 @@
     <!-- Fin Pie de página-->
 
     <!-- Jquery y Js-->
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>    
+    <script src="./js/encuesta.js"></script>
     <script src="./js/index.js"></script>
+
     <!-- Fin Jquery y Js-->
 </body>
 </html>

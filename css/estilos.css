@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap'); */
 
 
@@ -160,7 +162,7 @@ nav {
 .card{
 	width: 100%;
 	margin: 20px;
-    font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
 	border-radius: 6px;
 	overflow: hidden;
 	background:#fff;
@@ -217,11 +219,40 @@ nav {
 /*Fin Tarjetas*/
 
 /* Encuesta */
+.section__encuesta{
+  background-color: #F3969A;
+  text-align: center;
+  color: #FFF;
+  padding: 4rem;
+}
+.section__encuestaimg{
+  padding-bottom: 3rem;
+}
+
+.section__encuestatitle{
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  font-weight:700;
+  margin-bottom: .5rem;
+}
+
+.section__encuestatext{
+  font-size: 1.1rem;
+  margin: 0 20%;
+  letter-spacing: .05rem;
+}
+
+
+.nivel__1{
+font-size: 1.2rem;
+margin-top: 1.5rem;
+}
+
 .pregunta{
   margin: 0 10%;
   display: grid;
   grid-template-columns: repeat(10,1fr);
-  padding: 5rem;
+  padding: 1rem;
 }
 
 .nivel__1{
