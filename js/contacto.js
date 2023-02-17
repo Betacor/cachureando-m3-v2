@@ -12,33 +12,33 @@ nombre.addEventListener('click', ()=>{
 
 function validarForm() {
     var verificar=true;
-    var expRegNombre = /^([a-z ñáéíóú]{2,60})$/i;
-    var expRegCorreo = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,4})+$/;
+    var expRegName = /^([a-z ñáéíóú]{2,60})$/i;
+    var expRegEmail = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,4})+$/;
 
     //var formulario=document.getElementById("contacto");
-    var nombre=document.getElementById("nombre");
-    var correo=document.getElementById("correo");
-    var mensaje=document.getElementById("mensaje");
+    var name=document.getElementById("name");
+    var email=document.getElementById("email");
+    var message=document.getElementById("message");
 
-    if (!nombre.value) {
+    if (!name.value) {
         alert("El campo nombre es requerido");
-        nombre.focus();
+        name.focus();
         verificar=false;
-    }else if(!expRegNombre.exec(nombre.value)){
+    }else if(!expRegName.exec(name.value)){
         alert("El campo nombre solo acepta letras y espacios en blanco")
-        nombre.focus();
+        name.focus();
         vereficar=false;
-    }else if (!correo.value){
+    }else if (!email.value){
         alert("El campo correo es requerido");
-        correo.focus();
+        email.focus();
         verificar=false;
-    }else if (!expRegEmail.exec(correo.value)){
+    }else if (!expRegEmail.exec(email.value)){
         alert("El campo correo esta mal escrito");
-        correo.focus();
+        email.focus();
         verificar=false;
-    }else if (!mensaje.value) {
+    }else if (!message.value){
         alert("El campo mensaje es requerido");
-        mensaje.focus();
+        message.focus();
         verificar=false;
     }
     if(verificar){
@@ -56,7 +56,7 @@ window.onload=function(){
     /*botonLimpiar=document.getElementById("limpiar");
     botonLimpiar.onclick=limpiarForm;*/
 
-    botonEnviar=document.getElementById("enviar");
+    botonEnviar=document.getElementById("send");
     console.log(botonEnviar);
     botonEnviar.onclick=validarForm;
 
