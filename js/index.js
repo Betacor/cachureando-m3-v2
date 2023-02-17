@@ -32,6 +32,8 @@ function toTwoDigits(n) {
     }
     return newString;
 }
+
+// Alerta de Carrito
 function mostrar() {
     swal("Seguro que deseas agregar al carrito",{
         buttons: ["Si", "No"]
