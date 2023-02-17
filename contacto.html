@@ -4,9 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cachureando</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="/css/contacto.css">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    
+    <!-- Encabezado de la pagina -->
+    <main>
+        <section class="section">
+            <h2 class="section__title">Contacto</h2>
+        </section>
+    </main>
+    <!-- Bloque Contenido -->
+
+    <form action="POST" class="form">   <!--bloque form -->
+        <div class="form__group">
+            <label for="nombre" class="form__label">Nombre</label> <!--elemento -->
+            <input type="text" id="nombre" class="form__input" placeholder="Ingresa tu nombre">
+            </div>
+            <div class="form__group">
+            <label for="correo" class="form__label">Correo</label> <!--elemento -->
+            <input type="text" id="correo" class="form__input" placeholder="Ingresa tu email">
+        </div>
+        <div  class="form__group">
+            <label for="mensaje" class="form__label">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="form__textArea" 
+            placeholder="Cuéntanos que piensas"></textarea>
+            </div>
+        <input type="button" value="Enviar" class="form__button" id="enviar">
+    </form>
+
+    <script src="./js/contacto.js"></script>
 </body>
 </html>
