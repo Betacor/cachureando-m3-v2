@@ -46,10 +46,10 @@ function validateForm() {
     if (verify) {
         alert("Se ha enviado el formulario");
     }
-} function limpiarForm() {
-    document.getElementById("contacto-frm").reset();
-}
-window.onload = function () {
+ } //function limpiarForm() {
+//     document.getElementById("contacto-frm").reset();
+// }
+    window.onload= function () {
     var buttonSend; //buttonLimpiar
 
     // botonLimpiar = document.getElementById("limpiar");
