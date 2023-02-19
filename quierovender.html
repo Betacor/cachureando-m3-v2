@@ -61,7 +61,7 @@
                     </div>
                     <div class="form__group">
                         <label for="upload-img" class="form__label">Sube una imagen</label>
-                        <input type="file" class="form__input" name="upload-img" id="upload-img" required>
+                        <input type="file" accept=".jpg, .png" class="form__input" name="upload-img" id="upload-img" required>
                     </div>
                         <input type="button" class="form__button" name="send" id="send" value="Enviar">
                 </form>
@@ -78,7 +78,7 @@
     <!-- Fin Launcher -->
     
     <!-- Pie de página-->
-    <footer>
+    <footer onload="buttonSend()">
         <div class="footer">
             <img class="footer__icon" src="./img/gancho-de-ropa(1).png" alt="">
             <div class="body">
