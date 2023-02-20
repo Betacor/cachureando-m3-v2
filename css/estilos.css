@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap'); */
+
+
 
 /*   Global   */
 * {
@@ -121,11 +126,12 @@ nav {
     padding: 20px;
     font-size: 2rem;
     font-family: 'Poppins', sans-serif;
-    margin-top: 20px;
-    text-align: center;
-    font-weight: 900;
-    color: #7a7a7a;
-}
+	margin-top: 20px;
+	text-align: center;
+    font-weight: 600;
+    letter-spacing: .2rem;
+	color: #7a7a7a;
+  }
 
 .section__text {
     font-family: 'Poppins', sans-serif;
@@ -143,11 +149,40 @@ nav {
 
 
 /* Encuesta */
-.pregunta {
-    margin: 0 10%;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    padding: 5rem;
+.section__encuesta{
+  background-color: #F3969A;
+  text-align: center;
+  color: #FFF;
+  padding: 4rem;
+}
+.section__encuestaimg{
+  padding-bottom: 3rem;
+}
+
+.section__encuestatitle{
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  font-weight:700;
+  margin-bottom: .5rem;
+}
+
+.section__encuestatext{
+  font-size: 1.1rem;
+  margin: 0 20%;
+  letter-spacing: .05rem;
+}
+
+
+.nivel__1{
+font-size: 1.2rem;
+margin-top: 1.5rem;
+}
+
+.pregunta{
+  margin: 0 10%;
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  padding: 1rem;
 }
 
 .nivel__1 {

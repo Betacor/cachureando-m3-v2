@@ -4,9 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/quierovender.css">
+    <title>Cachureando</title>
 </head>
 <body>
-    <h1></h1>
+    <!-- INICIO CONTENIDO PRINCIPAL -->
+        <main class="main">
+            <!-- INICIO DE SECCION -->
+            <section id="" class="section">
+                <h2 class="section__title">Quiero vender</h2>
+            
+            <!-- INICIO DE FORMULARIO -->
+
+            <div class="form">
+                <form action="" method="post" id="form-selling" name="form">
+                    <div class="form__group">
+                        <label for="email" class="form__label">Email</label>
+                        <input type="email" class="form__input" name="email" id="email" placeholder="Ingresa tu email" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="password" class="form__label">Contraseña</label>
+                        <input type="password" class="form__input" name="password" id="password" placeholder="xxxxxxxxxxxx" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="sell" class="form__label">¿Qué vendes?</label>
+                        <input type="text" class="form__input" id="sell" name="sell" placeholder="Una polera rosada" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="size" class="form__label">¿Qué talla es?</label>
+                        <input type="text" class="form__input" id="size" name="size" placeholder="XS S M L XL XXL" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="upload-img" class="form__label">Sube una imagen</label>
+                        <input type="file" class="form__input" name="upload-img" id="upload-img" required>
+                    </div>
+                        <input type="button" class="form__button" name="send" id="send" value="Enviar">
+                </form>
+            </div>
+            </section>
+        </main>   
+        <script src="./js/quierovender.js" type="text/javascript"></script>
 </body>
 </html>
