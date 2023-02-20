@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tops</title>
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/productos.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/productos.css">
 </head>
 <body>
 
@@ -25,7 +25,7 @@
             <ul class="list-item">
                 <li><a href="./index.html#quierocomprar">Quiero comprar</a></li>
                 <li><a href="./index.html#quierovender">Quiero vender</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="#">Contacto</a></li>
                 <li><a href="./encuesta.html">Encuesta</a></li>
                 <!-- <li><a img href="#"></a></li>
             <li><a href="#"></a></li> -->
@@ -41,7 +41,17 @@
         
         <!-- Cards -->
         <div class="container__card container__card--products">
-            <div class="card">
+            <div class="card-product">
+                <figure>
+                    <img class="card__img" src="https://static.zara.net/photos///2022/I/0/1/p/5802/123/640/2/w/750/5802123640_6_1_1.jpg?ts=1660895338665">
+                </figure>
+                <div class="card__content">
+                    <h3 class="card__title card__title--right">Top fucsia</h3>
+                    <a class="card__btn" href="#">+</a>
+                    <a href="#" class="card__btn--cart" onclick="mostrar()"> <img src="./img/agregar-carrito(2).png" width="30"  alt=""></a>
+                </div>
+            </div>
+            <div class="card-product">
                 <figure>
                     <img class="card__img" src="https://static.zara.net/photos///2022/I/0/1/p/5802/123/640/2/w/750/5802123640_6_1_1.jpg?ts=1660895338665">
                 </figure>
@@ -50,7 +60,7 @@
                     <a class="card__btn" href="#">+</a>
                 </div>
             </div>
-            <div class="card">
+            <div class="card-product">
                 <figure>
                     <img class="card__img" src="https://static.zara.net/photos///2022/I/0/1/p/5802/123/640/2/w/750/5802123640_6_1_1.jpg?ts=1660895338665">
                 </figure>
@@ -59,7 +69,7 @@
                     <a class="card__btn" href="#">+</a>
                 </div>
             </div>
-            <div class="card">
+            <div class="card-product">
                 <figure>
                     <img class="card__img" src="https://static.zara.net/photos///2022/I/0/1/p/5802/123/640/2/w/750/5802123640_6_1_1.jpg?ts=1660895338665">
                 </figure>
@@ -68,16 +78,7 @@
                     <a class="card__btn" href="#">+</a>
                 </div>
             </div>
-            <div class="card">
-                <figure>
-                    <img class="card__img" src="https://static.zara.net/photos///2022/I/0/1/p/5802/123/640/2/w/750/5802123640_6_1_1.jpg?ts=1660895338665">
-                </figure>
-                <div class="card__content">
-                    <h3 class="card__title">TOPS</h3>
-                    <a class="card__btn" href="#">+</a>
-                </div>
-            </div>
-           
+        
             
 
 
@@ -89,6 +90,7 @@
     </section>
 
     <!-- PIE DE PAGINA -->
-        
+    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> <!--Alerta de carritos-->
 </body>
 </html>
