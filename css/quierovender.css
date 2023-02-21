@@ -1,5 +1,89 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap'); */
+/* ESTILOS NAV */
+.nav {
+    height: 100px;
+    background-color: #FAA6BD;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav__logo {
+    padding: 10px;
+    width: auto;
+    float: left;
+}
+.nav__img {
+    height: 55px;
+}
+
+.list {
+    float: right;
+    margin-right: 25px;
+    margin-top: 17px;
+}
+
+.list__item {
+    float: left;
+    padding: 13px 13px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    border-radius: 3px;
+    transition: all .5s ease-in-out;
+}
+.list__item a {
+    color: #EEE;
+}
+
+.list__item:hover {
+    background-color: rgb(233, 93, 121);
+}
+/*   Fin navbar   */
+
+.nav__icon {
+    display: none;
+}
+
+.toggle {
+    float: right;
+    margin: 20px;
+    color: #EEE;
+    font-size: 30px;
+    /* border: 1px solid #EEE; */
+    padding: 0px 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*   navbar responsive  */
+/* Media query del navbar  */
+
+@media (max-width: 1309px) {
+    .nav__icon {
+        display: block;
+        width: 100%;
+        height: 80px;
+        background-color: #FAA6BD;
+    }
+
+    .list{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        background-color: #FAA6BD;
+        display: none;
+    }
+
+    .list__item {
+        text-align: center;
+        display: block;
+        float: none;
+    }
+}
+
+/*   Fin media query  
+/*   Fin navbar responsive   */
+
+
+
  /* ESTILOS FORMULARIO QUIERO VENDER */ 
 .section {
     margin-top: 1rem;
@@ -30,7 +114,7 @@
     padding: 5px 0px;
     border: solid 1px #798177;
 } */
-.form__input{
+.form__input {
     width: 60vw;
     border-radius: 5px;
     padding: 5px 0px;

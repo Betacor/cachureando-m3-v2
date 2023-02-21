@@ -1,6 +1,6 @@
+// Validación de Formulario de quiero vender
 function validateForm() {
     var verify = true;
-    // var expRegName = /^([a-z ñáéíóú]{2,60})$/i;
     var expRegEmail = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,4})+$/;
 
     var form = document.getElementById("form-selling");
@@ -46,14 +46,7 @@ function validateForm() {
     if (verify) {
         alert("Se ha enviado el formulario");
     }
- } //function limpiarForm() {
-//     document.getElementById("contacto-frm").reset();
-// }
-    // window.onload= function () {
-    // var buttonSend; //buttonLimpiar
-
-    // botonLimpiar = document.getElementById("limpiar");
-    // botonLimpiar.onclick = limpiarForm;
+ } 
 
     buttonSend = document.getElementById("send");
     buttonSend.onclick = validateForm;

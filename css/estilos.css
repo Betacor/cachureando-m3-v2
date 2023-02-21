@@ -105,7 +105,7 @@ nav {
 /*   Fin navbar responsive   */
 
 /*   Hero img  */
-.hero__img img {
+.hero__img{
     object-fit: cover;
     /* object-position: 0%; */
     width: 100%;
@@ -176,7 +176,11 @@ nav {
 .nivel__1{
 font-size: 1.2rem;
 margin-top: 1.5rem;
+display: flex;
+    flex-direction: column;
+    text-align: center;
 }
+
 
 .pregunta{
   margin: 0 10%;
@@ -185,11 +189,7 @@ margin-top: 1.5rem;
   padding: 1rem;
 }
 
-.nivel__1 {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
+    
 
 /*Quiero vender*/
 .section__btn {
