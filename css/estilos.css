@@ -5,35 +5,33 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /*cambiar a class de nav*/
     font-family: 'Poppins', sans-serif;
-    /*cambiar a class de nav*/
 }
 
 /*   Fin Global   */
 
 /*   Navbar   */
-nav {
+.nav {
     height: 100px;
     background-color: #FAA6BD;
     font-family: 'Poppins', sans-serif;
     /* position: fixed; */
 }
-.logo {
+.nav__logo {
     padding: 10px;
     width: auto;
     float: left;
 }
-.logo img {
+.nav__img {
     height: 55px;
 }
-.list-item {
+.list {
     float: right;
     margin-right: 25px;
     margin-top: 17px;
     list-style: none;
 }
-.list-item li {
+.list__item {
     float: left;
     padding: 13px 13px;
     font-family: 'Poppins', sans-serif;
@@ -41,17 +39,17 @@ nav {
     border-radius: 3px;
     transition: all .5s ease-in-out;
 }
-.list-item li a {
+.list__item a {
     color: #EEE;
     text-decoration: none;
 }
-.list-item li:hover {
+.list__item:hover {
     background-color: rgb(233, 93, 121);
 }
 
 /*   Fin navbar   */
 
-.icon {
+.nav__icon{
     display: none;
 }
 
@@ -71,14 +69,14 @@ nav {
 /* Media query del navbar  */
 
 @media (max-width: 1200px) {
-    .icon {
+    .nav__icon {
         display: block;
         width: 100%;
         height: 80px;
         background-color: #FAA6BD;
     }
 
-    .list-item {
+    .list {
         width: 100%;
         margin: 0;
         padding: 0;
@@ -87,7 +85,7 @@ nav {
         display: none;
     }
 
-    .list-item li {
+    .list__item {
         text-align: center;
         display: block;
         float: none;
@@ -98,7 +96,7 @@ nav {
 /*   Fin navbar responsive   */
 
 /*   Hero img  */
-.hero__img{
+.hero__img {
     object-fit: cover;
     /* object-position: 0%; */
     width: 100%;
@@ -138,7 +136,48 @@ nav {
 .section-selling {
     background-color: #FFDFDF;
 }
+/*Estilos de formulario quiero vender y contacto*/
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
 
+.form__group {
+    margin: 0px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__input {
+    width: 60vw;
+    border-radius: 5px;
+    padding: 5px 0px;
+    border: solid 1px #848F82;
+}
+
+.form__textArea {
+    width: 60vw;
+}
+
+.form__button {
+    border: solid 1px rgb(172, 77, 109);
+    background-color: white;
+    color: rgb(172, 77, 109);
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+
+.form__button:hover {
+
+    border: solid 1px rgb(172, 77, 109);
+    color: white;
+    background-color: rgb(172, 77, 109);
+}
 
 /* Encuesta */
 .section__encuesta {
@@ -165,8 +204,6 @@ nav {
     letter-spacing: .05rem;
 }
 
-
-<<<<<<< HEAD
 .nivel__1{
 font-size: 1.2rem;
 margin-top: 1.5rem;
@@ -181,21 +218,7 @@ display: flex;
   display: grid;
   grid-template-columns: repeat(10,1fr);
   padding: 1rem;
-=======
-.nivel__1 {
-    font-size: 1.2rem;
-    margin-top: 1.5rem;
 }
-
-.pregunta {
-    margin: 0 10%;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    padding: 1rem;
->>>>>>> master
-}
-
-    
 
 /*Quiero vender*/
 .section__btn {
@@ -230,6 +253,8 @@ display: flex;
     color: white;
 }
 
+
+
 /*   Iconos flotantes  */
 .float-icon__btn--whatsapp {
     width: 50px;
@@ -252,6 +277,112 @@ display: flex;
 }
 
 /*   Fin Iconos Flotantes  */
+/* Estilos para tarjetas de productos */
+/*Tarjetas*/
+.container__cards {
+    width: 100%;
+    display: flex;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+
+.card {
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease-out;
+    cursor: default;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.card__img {
+    width: 100%;
+    /* height: 210px; */
+}
+
+.card__content {
+    padding: 15px;
+    text-align: center;
+}
+
+.card__content--right {
+    text-align: right;
+}
+
+.card__title {
+    margin-bottom: 15px;
+    color: #8C797E;
+    font-weight: 500;
+}
+
+.card__text {
+    line-height: 1.8;
+    color: #6a6a6a;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.card__btn {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #f3969a;
+    border: 1px solid #f3969a;
+    border-radius: 4px;
+    transition: all 400ms ease;
+    margin-bottom: 5px;
+}
+
+.card__btn:hover {
+    background: #f3969a;
+    color: #fff;
+}
+
+/*Tarjetas de productos*/
+.container__products-cards {
+    width: 100%;
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+
+.product-card {
+    width: 100%;
+    margin: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    cursor: default;
+}
+
+/*Responsive*/
+@media only screen and (min-width:0px) and (max-width:768px) {
+    .container__cards {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        margin: 15px;
+    }
+
+    .container__products-cards {
+        flex-wrap: wrap;
+    }
+
+    .product-card {
+        margin: 15px;
+    }
+}
 
 /*   Footer   */
 .footer {

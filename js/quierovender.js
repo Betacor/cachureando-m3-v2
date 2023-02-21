@@ -22,10 +22,6 @@ function validateForm() {
         alert("El campo contraseña es requerido");
         password.focus();
         verify = false;
-    } else if (!password.value) {
-        alert("La contraseña no es válida");
-        password.focus();
-        verify = false;
     } else if (!sell.value) {
         alert("El campo que vendes es requerido");
         sell.focus();

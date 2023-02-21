@@ -1,8 +1,7 @@
 //Validaciones del formulario contacto//
 
-
-function validarForm() {
-    var verificar=true;
+function validateForm() {
+    var verify=true;
     var expRegName = /^([a-z ñáéíóú]{2,60})$/i;  
     var expRegLastname = /^([a-z ñáéíóú]{2,60})$/i;
     var expRegEmail = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,4})+$/;
@@ -16,40 +15,39 @@ function validarForm() {
     if (!name.value) {
         alert("El campo nombre es requerido");
         name.focus();
-        verificar=false;
+        verify=false;
     }else if(!expRegName.exec(name.value)){
         alert("El campo nombre solo acepta letras y espacios en blanco");
         name.focus();
-        vereficar=false;
+        verify=false;
     }else if (!lastname.value) {
         alert("El campo apellido es requerido");
         name.focus();
-        verificar=false;
+        verify=false;
     }else if(!expRegLastname.exec(lastname.value)){
         alert("El campo apellido solo acepta letras y espacios en blanco");
         lastname.focus();
-        vereficar=false;
+        verify=false;
     }else if (!email.value){
         alert("El campo correo es requerido");
         email.focus();
-        verificar=false;
+        verify=false;
     }else if (!expRegEmail.exec(email.value)){
         alert("El campo correo esta mal escrito");
         email.focus();
-        verificar=false;
+        verify=false;
     }else if (!message.value){
         alert("El campo mensaje es requerido");
         message.focus();
-        verificar=false;
+        verify=false;
     }
-    if(verificar){
+    if(verify){
         alert("Se ha enviado el formulario");
     }
 }
 
-    botonEnviar=document.getElementById("send");
-    console.log(botonEnviar);
-    botonEnviar.onclick=validarForm;
+    buttonSend=document.getElementById("send");
+    buttonSend.onclick=validateForm;
 
     
 

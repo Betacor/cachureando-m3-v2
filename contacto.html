@@ -6,42 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cachureando</title>
     <link rel="stylesheet" href="./css/estilos.css">
-    <link rel="stylesheet" href="./css/contacto.css">
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
 <!-- Reloj -->
 <body onload="clock()">
-
-        <!-- navbar -->
-        <header>
-            <nav>
-                <div class="logo">
-                    <a href="./index.html">
-                        <img src="./img/gancho-de-ropa(1).png">
-                    </a>
-                </div>
-                <div class="icon">
-                    <span class="toggle">☰</span>
-                </div>
-                <ul class="list-item">
-                    <li><a href="#quiero_comprar">Quiero comprar</a></li>
-                    <li><a href="#quiero_vender">Quiero vender</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                    <li><a href="./encuesta.html">Encuesta</a></li>
-                    <!-- <li><a img href="#"></a></li>
-                <li><a href="#"></a></li> -->
-                </ul>
-            </nav>
-        </header>
+  <!-- navbar -->
+    <header >
+        <nav class="nav">
+            <div class="nav__logo">
+                <a href="./index.html">
+                    <img class="nav__img" src="./img/gancho-de-ropa(1).png">
+                </a>
+            </div>
+            <div class="nav__icon">
+                <span class="toggle">☰</span>
+            </div>
+            <ul class="list">
+                <li class="list__item"><a href="./index.html#quierocomprar">Quiero comprar</a></li>
+                <li class="list__item"><a href="./quierovender.html">Quiero vender</a></li>
+                <li class="list__item"><a href="./contacto.html">Contacto</a></li>
+                <li class="list__item"><a href="./encuesta.html">Encuesta</a></li>
+                <li class="list__item"><a href="./carrito.html">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+     
     <!-- Encabezado de la pagina -->
     <main>
         <section class="section">
             <h2 class="section__title">Contacto</h2>
-        </section>
-    </main>
+  
     <!-- Bloque Contenido -->
-
-    <form action="POST" class="form">   <!--bloque form -->
+    <div class="form">
+    <form action="POST">   <!--bloque form -->
         <div class="form__group">
             <label for="name" class="form__label">Nombre</label> <!--elemento -->
             <input type="text" id="name" class="form__input" placeholder="Ingresa tu nombre">
@@ -59,8 +56,11 @@
             <textarea name="message" id="message" cols="30" rows="10" class="form__textArea" 
             placeholder="Cuéntanos que piensas"></textarea>
             </div>
-        <input type="button" value="Enviar" class="form__button" id="send">
+        <input type="button" value="Enviar" class="form__button" name="send" id="send">
     </form>
+    </div>
+    </section>
+    </main>
 
     <script src="/js/contacto.js"></script>
 
@@ -73,25 +73,34 @@
     <div class="float-icon__btn--whatsapp">
         <a href="https://web.whatsapp.com/"><img src="./img/whatsapp(1).png" alt="" width="50"></a>
     </div>
-    <!-- Fin Launcher -->
+    <!-- Iconos Flotantes -->
+    <div class="float-icon__btn--cart">
+        <a href="./carrito.html"><img src="./img/carro-de-la-carretilla.png" alt="logo de carrito" width="50"></a>
+    </div>
+    <div class="float-icon__btn--whatsapp">
+        <a href="https://web.whatsapp.com/"><img src="./img/whatsapp(1).png" alt="logo de whatsapp" width="50"></a>
+    </div>
+    <!-- Fin Iconos Flotantes -->
 
-    <!-- Pie de página-->
+    <!-- FIN CONTENIDO DE LA PAGINA -->
+
+    <!-- PIE DE PÁGINA-->
     <footer>
         <div class="footer">
             <img class="footer__icon" src="./img/gancho-de-ropa(1).png" alt="">
             <div class="">
-                <div id="clock" class="footer__clock"></div>
+                <div  id="clock" class="footer__clock"></div>
                 <p class="footer__text">Codecats | Viña de Mar | Región de Valparaíso | 2023</p>
                 <div class="social">
                     <a href="#"><i class="social__icon--instagram"></i></a>
-                    <a href="#"><i class="social__twitter"></i></a>
+                    <a href="#"><i class="social__twitterr"></i></a>
                     <a href="#"><i class="social__facebook"></i>
                     </a>
                 </div>
             </div>
         </div>
     </footer>
-    <!-- Fin Pie de página-->
+    <!--FIN PIE DE PÁGINA-->
 
     <!-- Jquery y Js-->
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
