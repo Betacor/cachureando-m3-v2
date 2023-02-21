@@ -23,7 +23,7 @@ function validateForm() {
         password.focus();
         verify = false;
     } else if (!password.value) {
-        alert("El campo contraseña");
+        alert("La contraseña no es válida");
         password.focus();
         verify = false;
     } else if (!sell.value) {
@@ -46,17 +46,17 @@ function validateForm() {
     if (verify) {
         alert("Se ha enviado el formulario");
     }
-} function limpiarForm() {
-    document.getElementById("contacto-frm").reset();
-}
-window.onload = function () {
-    var buttonSend; //buttonLimpiar
+ } //function limpiarForm() {
+//     document.getElementById("contacto-frm").reset();
+// }
+    // window.onload= function () {
+    // var buttonSend; //buttonLimpiar
 
     // botonLimpiar = document.getElementById("limpiar");
     // botonLimpiar.onclick = limpiarForm;
 
-    botonSend = document.getElementById("send");
-    botonSend.onclick = validateForm;
-}
+    buttonSend = document.getElementById("send");
+    buttonSend.onclick = validateForm;
+
 
 
