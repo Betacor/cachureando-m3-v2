@@ -9,7 +9,30 @@
     <link rel="stylesheet" href="./css/contacto.css">
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
-<body>
+<!-- Reloj -->
+<body onload="clock()">
+
+        <!-- navbar -->
+        <header>
+            <nav>
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./img/gancho-de-ropa(1).png">
+                    </a>
+                </div>
+                <div class="icon">
+                    <span class="toggle">☰</span>
+                </div>
+                <ul class="list-item">
+                    <li><a href="#quiero_comprar">Quiero comprar</a></li>
+                    <li><a href="#quiero_vender">Quiero vender</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="./encuesta.html">Encuesta</a></li>
+                    <!-- <li><a img href="#"></a></li>
+                <li><a href="#"></a></li> -->
+                </ul>
+            </nav>
+        </header>
     <!-- Encabezado de la pagina -->
     <main>
         <section class="section">
@@ -23,7 +46,11 @@
             <label for="name" class="form__label">Nombre</label> <!--elemento -->
             <input type="text" id="name" class="form__input" placeholder="Ingresa tu nombre">
             </div>
-            <div class="form__group">
+        <div class="form__group">
+            <label for="lastname" class="form__label">Apellido</label> <!--elemento -->
+            <input type="text" id="lastname" class="form__input" placeholder="Ingresa tu apellido">
+            </div>
+        <div class="form__group">
             <label for="email" class="form__label">Correo</label> <!--elemento -->
             <input type="email" id="email" class="form__input" placeholder="Ingresa tu email">
         </div>
@@ -36,5 +63,40 @@
     </form>
 
     <script src="/js/contacto.js"></script>
+
+    <!-- Fin Bloque Contenido -->
+
+    <!-- Launcher -->
+    <div class="float-icon__btn--cart">
+        <a href="./carrito.html"><img src="./img/carro-de-la-carretilla.png" alt="" width="50"></a>
+    </div>
+    <div class="float-icon__btn--whatsapp">
+        <a href="https://web.whatsapp.com/"><img src="./img/whatsapp(1).png" alt="" width="50"></a>
+    </div>
+    <!-- Fin Launcher -->
+
+    <!-- Pie de página-->
+    <footer>
+        <div class="footer">
+            <img class="footer__icon" src="./img/gancho-de-ropa(1).png" alt="">
+            <div class="">
+                <div id="clock" class="footer__clock"></div>
+                <p class="footer__text">Codecats | Viña de Mar | Región de Valparaíso | 2023</p>
+                <div class="social">
+                    <a href="#"><i class="social__icon--instagram"></i></a>
+                    <a href="#"><i class="social__twitter"></i></a>
+                    <a href="#"><i class="social__facebook"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Fin Pie de página-->
+
+    <!-- Jquery y Js-->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+    <!-- Fin Jquery y Js-->
+
 </body>
 </html>

@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="./css/productos.css">
+    <link rel="stylesheet" href="./css/productos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <title>Cachureando m3</title>
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
 <body onload="clock()">
-
-    <!-- navbar -->
+    <!-- ENCABEZADO DE LA PAGINA -->
+    <!-- Navbar -->
     <header>
         <nav>
             <div class="logo">
@@ -24,7 +25,11 @@
                 <span class="toggle">☰</span>
             </div>
             <ul class="list-item">
+
+                <li><a href="./index.html#quierocomprar">Quiero comprar</a></li>
+
                 <li><a href="#quiero_comprar">Quiero comprar</a></li>
+
                 <li><a href="./quierovender.html">Quiero vender</a></li>
                 <li><a href="./contacto.html">Contacto</a></li>
                 <li><a href="./encuesta.html">Encuesta</a></li>
@@ -32,7 +37,9 @@
             </ul>
         </nav>
     </header>
+    <!-- FIN ENCABEZADO DE LA PAGINA -->
 
+    <!-- CONTENIDO DE LA PAGINA -->
     <!-- hero -->
     <div class="hero">
         <img class="hero__img" src="./img/LANDING_Mesa de trabajo 1.png" alt="">
@@ -56,8 +63,8 @@
     <section class="section">
         <h2 class="section__title" id="quiero_comprar">Quiero comprar</h2>
         
-        <!--   Tarjetas-->
-        <div class="container__card">
+        <!--Tarjetas-->
+        <div class="container__cards">
             <div class="card">
                 <figure>
                     <img class="card__img" src="https://static.zara.net/photos///2022/I/0/1/p/5802/123/640/2/w/750/5802123640_6_1_1.jpg?ts=1660895338665">
@@ -73,7 +80,7 @@
                 </figure>
                 <div class="card__content">
                     <h3 class="card__title">PANTALONES</h3>
-                    <a class="card__btn" href="#">+</a>
+                    <a class="card__btn" href="./pantalones.html">+</a>
                 </div>
             </div>
             <div class="card">
@@ -82,7 +89,7 @@
                 </figure>
                 <div class="card__content">
                     <h3 class="card__title">CHAQUETAS</h3>
-                    <a class="card__btn" href="#">+</a>
+                    <a class="card__btn" href="./chaquetas.html">+</a>
                 </div>
             </div>
             <div class="card">
@@ -91,7 +98,7 @@
                 </figure>
                 <div class="card__content">
                     <h3 class="card__title">CALZADO</h3>
-                    <a class="card__btn" href="#">+</a>
+                    <a class="card__btn" href="./calzado.html">+</a>
                 </div>
             </div>
 
@@ -101,25 +108,27 @@
     <!-- Fin Quiero comprar -->
 
     <!-- quiero vender -->
-    <section class="section__selling">
+    <section class="section-selling">
         <section class="section">
             <h2 class="section__title" id="quierovender">Quiero vender</h2>
             <div class="section__btn">
-                <button class="btn info"><a href="./quierovender.html">Si, quiero vender!</a></button>
+                <button class="btn info"><a class="btn__a" href="./quierovender.html">Si, quiero vender!</a></button>
             </div>
         </section>
     </section>
 
-    <!-- Launcher -->
-    <div class="launcher__btn--cart">
-        <a href="./carrito.html"><img src="./img/carro-de-la-carretilla.png" alt="" width="50"></a>
+    <!-- Iconos Flotantes -->
+    <div class="float-icon__btn--cart">
+        <a href="./carrito.html"><img src="./img/carro-de-la-carretilla.png" alt="logo de carrito" width="50"></a>
     </div>
-    <div class="launcher__btn--whatsapp">
-        <a href="https://web.whatsapp.com/"><img src="./img/whatsapp(1).png" alt="" width="50"></a>
+    <div class="float-icon__btn--whatsapp">
+        <a href="https://web.whatsapp.com/"><img src="./img/whatsapp(1).png" alt="logo de whatsapp" width="50"></a>
     </div>
-    <!-- Fin Launcher -->
+    <!-- Fin Iconos Flotantes -->
 
-    <!-- Pie de página-->
+    <!-- FIN CONTENIDO DE LA PAGINA -->
+
+    <!-- PIE DE PÁGINA-->
     <footer>
         <div class="footer">
             <img class="footer__icon" src="./img/gancho-de-ropa(1).png" alt="">
@@ -135,10 +144,10 @@
             </div>
         </div>
     </footer>
-    <!-- Fin Pie de página-->
+    <!--FIN PIE DE PÁGINA-->
 
     <!-- Jquery y Js-->
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script> <!--Menú-->
     <script src="./js/index.js"></script>
     <!-- Fin Jquery y Js-->
 

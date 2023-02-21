@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaquetas</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/productos.css">
+</head>
+
+<body onload="clock()">
+    <!-- ENCABEZADO DE LA PAGINA -->
+    <header>
+        <!-- navbar -->
+        <nav>
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./img/gancho-de-ropa(1).png">
+                </a>
+            </div>
+            <div class="icon">
+                <span class="toggle">☰</span>
+            </div>
+            <ul class="list-item">
+                <li><a href="./index.html#quierocomprar">Quiero comprar</a></li>
+                <li><a href="./quierovender.html">Quiero vender</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./encuesta.html">Encuesta</a></li>
+                <li><a href="./carrito.html">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- FIN ENCABEZADO DE LA PAGINA -->
+
+
+    <!--CONTENIDO DE LA PAGINA -->
+    <section>
+        <h2 class="section__title">CHAQUETAS</h2>
+        
+        <!-- Tarjetas de productos -->
+        <div class="container__products-cards">
+            <div class="product-card">
+                <figure>
+                    <img class="card__img" src="https://static.zara.net/photos///2023/W/0/1/p/7005/707/712/2/w/750/7005707712_6_1_1.jpg?ts=1672846140211">
+                </figure>
+                <div class="card__content card__content--right">
+                    <h3 class="card__title">Blazer blanco</h3>
+                    <a href="#" onclick="mostrar()"> <img src="./img/agregar-carrito(2).png" width="30"  alt=""></a>
+                </div>
+            </div>
+            <div class="product-card">
+                <figure>
+                    <img class="card__img" src="https://static.zara.net/photos///2023/W/0/1/p/8495/150/630/2/w/750/8495150630_6_1_1.jpg?ts=1671554996069">
+                </figure>
+                <div class="card__content card__content--right">
+                    <h3 class="card__title">Chaqueta rosada</h3>
+                    <a href="#" onclick="mostrar()"> <img src="./img/agregar-carrito(2).png" width="30"  alt=""></a>
+                </div>
+            </div>
+            <div class="product-card">
+                <figure>
+                    <img class="card__img" src="https://static.zara.net/photos///2023/W/0/1/p/7043/264/649/2/w/750/7043264649_6_1_1.jpg?ts=1670243613749">
+                </figure>
+                <div class="card__content card__content--right">
+                    <h3 class="card__title">Chaqueta roja</h3>
+                    <a href="#" onclick="mostrar()"> <img src="./img/agregar-carrito(2).png" width="30"  alt=""></a>
+                </div>
+            </div>
+            <div class="product-card">
+                <figure>
+                    <img class="card__img" src="https://static.zara.net/photos///2023/W/0/1/p/7189/224/743/2/w/750/7189224743_6_1_1.jpg?ts=1671554974853">
+                </figure>
+                <div class="card__content card__content--right">
+                    <h3 class="card__title">Chaqueta beige</h3>
+                    <a href="#" onclick="mostrar()"> <img src="./img/agregar-carrito(2).png" width="30"  alt=""></a>
+                </div>
+            </div>
+        </div>
+        <!--Fin Tarjetas de Productos-->
+    </section>
+
+    <!-- Iconos Flotantes -->
+    <div class="float-icon__btn--cart">
+        <a href="./carrito.html"><img src="./img/carro-de-la-carretilla.png" alt="logo de carrito" width="50"></a>
+    </div>
+    <div class="float-icon__btn--whatsapp">
+        <a href="https://web.whatsapp.com/"><img src="./img/whatsapp(1).png" alt="logo de whatsapp" width="50"></a>
+    </div>
+    <!-- Fin Iconos Flotantes -->
+
+    <!-- PIE DE PAGINA -->
+    <footer>
+        <div class="footer">
+            <img class="footer__icon" src="./img/gancho-de-ropa(1).png" alt="">
+            <div class="">
+                <div  id="clock" class="footer__clock"></div>
+                <p class="footer__text">Codecats | Viña de Mar | Región de Valparaíso | 2023</p>
+                <div class="social">
+                    <a href="#"><i class="social__icon--instagram"></i></a>
+                    <a href="#"><i class="social__twitterr"></i></a>
+                    <a href="#"><i class="social__facebook"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Fin PIE DE PAGINA-->
+    
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script> <!--Menú-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> <!--Alerta de carritos-->
+    <script src="./js/index.js"></script>
+</body>
+</html>
