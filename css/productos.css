@@ -1,27 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-.section__title{
-	width: 100%;
-	max-width: 1080px;
-	margin: auto;
-	padding: 20px;
-	margin-top: 20px;
-	text-align: center;
-	color: #8c797e;
-}
 
 /*Tarjetas*/
 .container__cards{
 	width: 100%;
 	display: flex;
-	/* max-width: 1100px; */
 	margin: auto;
     /* border: 1px solid red; */
 }

@@ -1,18 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap'); */
-
-
-
 /*   Global   */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    text-decoration: none;
     /*cambiar a class de nav*/
     font-family: 'Poppins', sans-serif;
-    list-style: none;
     /*cambiar a class de nav*/
 }
 
@@ -23,24 +17,22 @@ nav {
     height: 100px;
     background-color: #FAA6BD;
     font-family: 'Poppins', sans-serif;
+    /* position: fixed; */
 }
-
 .logo {
     padding: 10px;
     width: auto;
     float: left;
 }
-
 .logo img {
     height: 55px;
 }
-
 .list-item {
     float: right;
     margin-right: 25px;
     margin-top: 17px;
+    list-style: none;
 }
-
 .list-item li {
     float: left;
     padding: 13px 13px;
@@ -49,11 +41,10 @@ nav {
     border-radius: 3px;
     transition: all .5s ease-in-out;
 }
-
 .list-item li a {
     color: #EEE;
+    text-decoration: none;
 }
-
 .list-item li:hover {
     background-color: rgb(233, 93, 121);
 }
@@ -79,7 +70,7 @@ nav {
 /*   navbar responsive  */
 /* Media query del navbar  */
 
-@media (max-width: 1309px) {
+@media (max-width: 1200px) {
     .icon {
         display: block;
         width: 100%;
@@ -113,7 +104,6 @@ nav {
     width: 100%;
     max-height: 40rem;
 }
-
 /*   Fin hero   */
 
 /*   Secciones   */
@@ -145,7 +135,7 @@ nav {
     margin-right: 10rem; */
 }
 
-.section__selling {
+.section-selling {
     background-color: #FFDFDF;
 }
 
@@ -214,6 +204,7 @@ nav {
 }
 .btn__a{
     color: #8C797E;
+    text-decoration: none;
 }
 
 .info {
@@ -226,7 +217,7 @@ nav {
     color: white;
 }
 
-/*   Launcher  */
+/*   Iconos flotantes  */
 .float-icon__btn--whatsapp {
     width: 50px;
     height: 50px;
@@ -247,7 +238,7 @@ nav {
     padding: 0;
 }
 
-/*   Fin Launcher  */
+/*   Fin Iconos Flotantes  */
 
 /*   Footer   */
 .footer {
