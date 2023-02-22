@@ -389,8 +389,8 @@ display: flex;
     background-color: #FAA6BD;
     font-family: 'Poppins', sans-serif;
     color: #fff;
-    padding: 6rem;
-    text-align: center;
+    padding: 4rem;
+    text-align: right;
     letter-spacing: .05rem;
 }
 
@@ -401,7 +401,7 @@ display: flex;
 
 .footer__clock {
     padding-top: 2rem;
-    text-align: center;
+    text-align: right;
     font-family: 'Poppins', sans-serif;
     font-size: larger;
     background-color: #FAA6BD;
@@ -411,9 +411,13 @@ display: flex;
 .social {
 
     margin-top: 1rem;
-    text-align: center;
+    text-align: right;
     /* border: 1px solid red; */
     width: 100%;
+}
+
+.social img{
+  width: 2.5rem;
 }
 
 .social__icon--instagram {
