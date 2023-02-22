@@ -307,6 +307,11 @@ display: flex;
     /* height: 210px; */
 }
 
+.product-card p{
+  color: #6a6a6a;
+  font-size: 0.7rem;
+}
+
 .card__content {
     padding: 15px;
     text-align: center;
@@ -389,6 +394,7 @@ display: flex;
     background-color: #FAA6BD;
     font-family: 'Poppins', sans-serif;
     color: #fff;
+    margin-top: 4rem;
     padding: 4rem;
     text-align: right;
     letter-spacing: .05rem;
