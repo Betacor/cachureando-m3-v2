@@ -32,7 +32,7 @@
     margin-top: 17px;
     list-style: none;
 }
-.list__item {
+.list__li {
     float: left;
     padding: 13px 13px;
     font-family: 'Poppins', sans-serif;
@@ -40,11 +40,11 @@
     border-radius: 3px;
     transition: all .5s ease-in-out;
 }
-.list__item a {
+.list__a {
     color: #EEE;
     text-decoration: none;
 }
-.list__item:hover {
+.list__li:hover {
     background-color: rgb(233, 93, 121);
 }
 
@@ -54,7 +54,7 @@
     display: none;
 }
 
-.toggle {
+.nav__toggle {
     float: right;
     margin: 20px;
     color: #EEE;
@@ -86,7 +86,7 @@
         display: none;
     }
 
-    .list__item {
+    .list__li {
         text-align: center;
         display: block;
         float: none;
@@ -134,8 +134,9 @@
     margin-right: 10rem; */
 }
 
-.section-selling {
+.section-sale {
     background-color: #FFDFDF;
+    padding: 6rem;
 }
 /*Estilos de formulario quiero vender y contacto*/
 .form {
@@ -181,31 +182,32 @@
 }
 
 /* Encuesta */
-.section__encuesta {
+.section-survey {
     background-color: #F3969A;
     text-align: center;
     color: #FFF;
     padding: 4rem;
 }
 
-.section__encuestaimg {
+.section-survey__img {
     padding-bottom: 3rem;
+    margin-top: 50px;
 }
 
-.section__encuestatitle {
+.section-survey__title {
     font-size: 2rem;
     letter-spacing: 0.2rem;
     font-weight: 700;
     margin-bottom: .5rem;
 }
 
-.section__encuestatext {
+.section-survey__text {
     font-size: 1.1rem;
     margin: 0 20%;
     letter-spacing: .05rem;
 }
 
-.nivel__1{
+.section-survey__option{
 font-size: 1.2rem;
 margin-top: 1.5rem;
 display: flex;
@@ -214,20 +216,20 @@ display: flex;
 }
 
 
-.pregunta{
-  margin: 0 10%;
-  display: grid;
-  grid-template-columns: repeat(10,1fr);
-  padding: 1rem;
+.section-survey__container-options{
+margin: 0 10%;
+display: grid;
+grid-template-columns: repeat(10,1fr);
+padding: 1rem;
 }
 
 /*Quiero vender*/
-.section__btn {
+.section-sale__group {
     align-content: center;
     text-align: center;
 }
 
-.btn {
+.section-sale__btn {
     border: 2px solid #F3969A;
     font-family: 'Poppins', sans-serif;
     border-radius: 0.5rem;
@@ -237,19 +239,15 @@ display: flex;
     font-size: 16px;
     cursor: pointer;
     margin-top: 2rem;
+    color: #F3969A;
 
 }
-.btn__a{
+.section-sale__a{
     color: #8C797E;
     text-decoration: none;
 }
 
-.info {
-    border-color: #F3969A;
-    color: #F3969A;    
-}
-
-.info:hover{
+.section-sale__btn:hover{
     background: #F3969A;
     color: white;
 }
@@ -308,9 +306,9 @@ display: flex;
     /* height: 210px; */
 }
 
-.product-card p{
-  color: #6a6a6a;
-  font-size: 0.7rem;
+.product-card__p{
+    color: #6a6a6a;
+    font-size: 0.7rem;
 }
 
 .card__content {
@@ -423,24 +421,12 @@ display: flex;
     width: 100%;
 }
 
-.social img{
-  width: 2.5rem;
+.social__icon{
+    width: 2.5rem;
 }
 
-.social__icon--instagram {
-    font-size: 24px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    display: inline-block;
-    text-align: center;
-    margin: 0 8px;
-    color: #FFF;
-    /* border: 1px solid blue; */
-    /* opacity: 0.75; */
-}
 
-footer .social>a:hover {
+.social__icon:hover {
     opacity: 0.4;
 }
 

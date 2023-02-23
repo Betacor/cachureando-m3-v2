@@ -1,4 +1,4 @@
-$('.toggle').click(function () {
+$('.nav__toggle').click(function () {
     "use strict";
     $('nav ul').slideToggle();
 });
