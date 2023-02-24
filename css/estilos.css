@@ -148,6 +148,9 @@
     background: #F3969A;
     color: white;
 }
+.section-sale__a:hover{
+    color: white;
+}
 
 /*  Sección Encuesta  */
 .section-survey {
@@ -190,6 +193,7 @@
 }
 .section-survey__alert-a{
     color: white;
+    text-decoration: none;
 }
 
 /*  Formularios Quiero Vender y Contacto  */
