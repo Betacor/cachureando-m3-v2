@@ -42,7 +42,7 @@ function validateForm() {
     if (verify) {
         alert("Guardado exitosamente");
     }
- } 
+} 
 
     buttonSend = document.getElementById("send");
     buttonSend.onclick = validateForm;
