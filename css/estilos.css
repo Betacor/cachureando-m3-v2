@@ -7,7 +7,6 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-/*   Fin Global   */
 
 /*   Navbar   */
 .nav {
@@ -61,7 +60,6 @@
 }
 
 /*   Navbar Responsive  */
-
 @media (max-width: 1200px) {
     .nav__icon {
         display: block;
@@ -69,7 +67,6 @@
         height: 80px;
         background-color: #FAA6BD;
     }
-
     .list {
         width: 100%;
         margin: 0;
@@ -78,14 +75,12 @@
         background-color: #FAA6BD;
         display: none;
     }
-
     .list__li {
         text-align: center;
         display: block;
         float: none;
     }
 }
-/*   Fin Navbar   */
 
 /*   Hero  */
 .hero__img {
@@ -94,7 +89,6 @@
     width: 100%;
     max-height: 40rem;
 }
-/*   Fin hero   */
 
 /*   Secciones   */
 .section {
@@ -225,10 +219,6 @@ padding: 1rem;
     background-color: rgb(172, 77, 109);
 }
 
-
-
-
-
 /*   Iconos flotantes  */
 .float-icon__btn--whatsapp {
     width: 50px;
@@ -239,7 +229,6 @@ padding: 1rem;
     border-radius: 50%;
     padding: 0;
 }
-
 .float-icon__btn--cart {
     width: 50px;
     height: 50px;
@@ -250,16 +239,13 @@ padding: 1rem;
     padding: 0;
 }
 
-/*   Fin Iconos Flotantes  */
-/* Estilos para tarjetas de productos */
-/*Tarjetas*/
+/*  Tarjetas del Index   */
 .container__cards {
     width: 100%;
     display: flex;
     margin: auto;
     /* border: 1px solid red; */
 }
-
 .card {
     width: 100%;
     margin: 20px;
@@ -270,45 +256,32 @@ padding: 1rem;
     transition: all 400ms ease-out;
     cursor: default;
 }
-
 .card:hover {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
     transform: translateY(-3%);
 }
-
 .card__img {
     width: 100%;
     /* height: 210px; */
 }
-
-.product-card__p{
-    color: #6a6a6a;
-    font-size: 0.7rem;
-}
-
 .card__content {
     padding: 15px;
     text-align: center;
 }
-
 .card__content--right {
     text-align: right;
 }
-
 .card__title {
     margin-bottom: 15px;
     color: #8C797E;
     font-weight: 500;
 }
-
 .card__text {
     line-height: 1.8;
     color: #6a6a6a;
     font-size: 14px;
-    margin-bottom: 5px;
-    
+    margin-bottom: 5px;   
 }
-
 .card__btn {
     display: inline-block;
     padding: 10px;
@@ -320,13 +293,12 @@ padding: 1rem;
     transition: all 400ms ease;
     margin-bottom: 5px;
 }
-
 .card__btn:hover {
     background: #f3969a;
     color: #fff;
 }
 
-/*Tarjetas de productos*/
+/*Tarjetas de Productos*/
 .container__products-cards {
     width: 100%;
     display: flex;
@@ -334,7 +306,6 @@ padding: 1rem;
     margin: auto;
     /* border: 1px solid red; */
 }
-
 .product-card {
     width: 100%;
     margin: 20px;
@@ -344,21 +315,22 @@ padding: 1rem;
     background: #fff;
     cursor: default;
 }
+.product-card__p{
+    color: #6a6a6a;
+    font-size: 0.7rem;
+}
 
-/*Responsive*/
+/*Tarjetas Responsive*/
 @media only screen and (min-width:0px) and (max-width:768px) {
     .container__cards {
         flex-wrap: wrap;
     }
-
     .card {
         margin: 15px;
     }
-
     .container__products-cards {
         flex-wrap: wrap;
     }
-
     .product-card {
         margin: 15px;
     }
@@ -374,12 +346,10 @@ padding: 1rem;
     text-align: right;
     letter-spacing: .05rem;
 }
-
 .footer__icon {
     width: 40px;
     height: 40px;
 }
-
 .footer__clock {
     padding-top: 2rem;
     text-align: right;
@@ -388,22 +358,15 @@ padding: 1rem;
     background-color: #FAA6BD;
     color: #FFF;
 }
-
 .social {
-
     margin-top: 1rem;
     text-align: right;
     /* border: 1px solid red; */
     width: 100%;
 }
-
 .social__icon{
     width: 2.5rem;
 }
-
-
 .social__icon:hover {
     opacity: 0.4;
 }
-
-/*  Fin Footer   */
