@@ -229,23 +229,19 @@
 }
 
 /*   Iconos flotantes  */
-.float-icon__btn--whatsapp {
+.float-icon{
     width: 50px;
     height: 50px;
     position: fixed;
-    bottom: 70px;
     left: 20px;
     border-radius: 50%;
     padding: 0;
 }
-.float-icon__btn--cart {
-    width: 50px;
-    height: 50px;
-    position: fixed;
+.float-icon--whatsapp {
+    bottom: 70px;
+}
+.float-icon--cart {
     bottom: 130px;
-    left: 20px;
-    border-radius: 50%;
-    padding: 0;
 }
 
 /*  Tarjetas del Index   */
