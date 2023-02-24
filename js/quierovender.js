@@ -40,9 +40,9 @@ function validateForm() {
         verify = false;
     }
     if (verify) {
-        alert("Se ha enviado el formulario");
+        alert("Guardado exitosamente");
     }
- } 
+} 
 
     buttonSend = document.getElementById("send");
     buttonSend.onclick = validateForm;
