@@ -222,6 +222,7 @@
     border: solid 1px #cfcece;
     padding: 5px 8px;
     border-radius: 5px;
+    resize: none;
 }
 .form__button {
     border: solid 1px #f3969a;
