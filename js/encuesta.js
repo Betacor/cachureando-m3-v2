@@ -5,8 +5,7 @@ $( document ).ready(function(){
       $("#alerta-exito").show("slow");
    });
    $("#close-exito").click(function(){
-    $("#alerta-exito").hide("slow");
+   $("#alerta-exito").hide("slow");
    });
-  });
+});
 
-  
