@@ -172,17 +172,24 @@
     letter-spacing: .05rem;
 }
 .section-survey__option{
-font-size: 1.2rem;
-margin-top: 1.5rem;
-display: flex;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    display: flex;
     flex-direction: column;
     text-align: center;
 }
 .section-survey__container-options{
-margin: 0 10%;
-display: grid;
-grid-template-columns: repeat(10,1fr);
-padding: 1rem;
+    margin: 0 10%;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    padding: 1rem;
+}
+.section-survey__alert{
+    background-color: #d0748c ;
+    padding: 10px;
+}
+.section-survey__alert-a{
+    color: white;
 }
 
 /*  Formularios Quiero Vender y Contacto  */
@@ -203,7 +210,7 @@ padding: 1rem;
     padding: 5px 0px;
     border: solid 1px #848F82;
 }
-.form__textArea {
+.form__textarea {
     width: 60vw;
 }
 .form__button {
