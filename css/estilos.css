@@ -7,7 +7,6 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
 /*   Fin Global   */
 
 /*   Navbar   */
@@ -25,6 +24,19 @@
 }
 .nav__img {
     height: 55px;
+}
+.nav__icon{
+    display: none;
+}
+.nav__toggle {
+    float: right;
+    margin: 20px;
+    color: #EEE;
+    font-size: 30px;
+    /* border: 1px solid #EEE; */
+    padding: 0px 5px;
+    border-radius: 4px;
+    cursor: pointer;
 }
 .list {
     float: right;
@@ -48,26 +60,7 @@
     background-color: rgb(233, 93, 121);
 }
 
-/*   Fin navbar   */
-
-.nav__icon{
-    display: none;
-}
-
-.nav__toggle {
-    float: right;
-    margin: 20px;
-    color: #EEE;
-    font-size: 30px;
-    /* border: 1px solid #EEE; */
-    padding: 0px 5px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-
-/*   navbar responsive  */
-/* Media query del navbar  */
+/*   Navbar Responsive  */
 
 @media (max-width: 1200px) {
     .nav__icon {
@@ -92,11 +85,9 @@
         float: none;
     }
 }
+/*   Fin Navbar   */
 
-/*   Fin media query  
-/*   Fin navbar responsive   */
-
-/*   Hero img  */
+/*   Hero  */
 .hero__img {
     object-fit: cover;
     /* object-position: 0%; */
@@ -109,7 +100,6 @@
 .section {
     padding: 6rem;
 }
-
 .section__title {
     width: 100%;
     max-width: 1080px;
@@ -123,7 +113,6 @@
     letter-spacing: .2rem;
     color: #8C797E;
 }
-
 .section__text {
     font-family: 'Poppins', sans-serif;
     padding: 2rem;
@@ -134,101 +123,15 @@
     margin-right: 10rem; */
 }
 
+/*  Sección Quiero vender   */
 .section-sale {
     background-color: #ffcecea5;
     padding: 6rem;
 }
-/*Estilos de formulario quiero vender y contacto*/
-.form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
-
-.form__group {
-    margin: 0px 0px 10px 0px;
-    display: flex;
-    flex-direction: column;
-}
-
-.form__input {
-    width: 60vw;
-    border-radius: 5px;
-    padding: 5px 0px;
-    border: solid 1px #848F82;
-}
-
-.form__textArea {
-    width: 60vw;
-}
-
-.form__button {
-    border: solid 1px rgb(172, 77, 109);
-    background-color: white;
-    color: rgb(172, 77, 109);
-    padding: 10px;
-    border-radius: 5px;
-    transition: all 0.5s;
-    cursor: pointer;
-
-}
-
-.form__button:hover {
-
-    border: solid 1px rgb(172, 77, 109);
-    color: white;
-    background-color: rgb(172, 77, 109);
-}
-
-/* Encuesta */
-.section-survey {
-    background-color: #F3969A;
-    text-align: center;
-    color: #FFF;
-    padding: 4rem;
-}
-
-.section-survey__img {
-    padding-bottom: 3rem;
-    margin-top: 50px;
-}
-
-.section-survey__title {
-    font-size: 2rem;
-    letter-spacing: 0.2rem;
-    font-weight: 700;
-    margin-bottom: .5rem;
-}
-
-.section-survey__text {
-    font-size: 1.1rem;
-    margin: 0 20%;
-    letter-spacing: .05rem;
-}
-
-.section-survey__option{
-font-size: 1.2rem;
-margin-top: 1.5rem;
-display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-
-.section-survey__container-options{
-margin: 0 10%;
-display: grid;
-grid-template-columns: repeat(10,1fr);
-padding: 1rem;
-}
-
-/*Quiero vender*/
 .section-sale__group {
     align-content: center;
     text-align: center;
 }
-
 .section-sale__btn {
     border: 2px solid #F3969A;
     font-family: 'Poppins', sans-serif;
@@ -240,17 +143,89 @@ padding: 1rem;
     cursor: pointer;
     margin-top: 2rem;
     color: #F3969A;
-
 }
 .section-sale__a{
     color: #8C797E;
     text-decoration: none;
 }
-
 .section-sale__btn:hover{
     background: #F3969A;
     color: white;
 }
+
+/*  Sección Encuesta  */
+.section-survey {
+    background-color: #F3969A;
+    text-align: center;
+    color: #FFF;
+    padding: 4rem;
+}
+.section-survey__img {
+    padding-bottom: 3rem;
+    margin-top: 50px;
+}
+.section-survey__title {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+.section-survey__text {
+    font-size: 1.1rem;
+    margin: 0 20%;
+    letter-spacing: .05rem;
+}
+.section-survey__option{
+font-size: 1.2rem;
+margin-top: 1.5rem;
+display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.section-survey__container-options{
+margin: 0 10%;
+display: grid;
+grid-template-columns: repeat(10,1fr);
+padding: 1rem;
+}
+
+/*  Formularios Quiero Vender y Contacto  */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.form__group {
+    margin: 0px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+.form__input {
+    width: 60vw;
+    border-radius: 5px;
+    padding: 5px 0px;
+    border: solid 1px #848F82;
+}
+.form__textArea {
+    width: 60vw;
+}
+.form__button {
+    border: solid 1px rgb(172, 77, 109);
+    background-color: white;
+    color: rgb(172, 77, 109);
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.form__button:hover {
+    border: solid 1px rgb(172, 77, 109);
+    color: white;
+    background-color: rgb(172, 77, 109);
+}
+
+
 
 
 
