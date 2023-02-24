@@ -40,7 +40,7 @@ function validateForm() {
         verify = false;
     }
     if (verify) {
-        alert("Se ha enviado el formulario");
+        alert("Guardado exitosamente");
     }
  } 
 
