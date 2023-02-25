@@ -1,4 +1,4 @@
-# Cachureando
+# Cachureando - Proyecto con Metodología BEM
 https://github.com/betacor/cachureando-m3-v2
 
 Proyecto Grupal Front-End
